@@ -1,4 +1,3 @@
-# insertion_sort-0.0.1
 #include <iostream>
 #include <sstream>
 
@@ -11,9 +10,12 @@ bool read (int & n, int * mas)
     istringstream stream(str);
      bool F = true;
     
-       for (int i=0;i<n;i++)
-        {
-          if (!(stream >> mas[i])) { F = false; break;}
+       for (int i=0;i<n;i++){
+          if (!(stream >> mas[i])) {
+                F = false;
+                break;
+             
+          }
         }
    return F;
 }
@@ -41,7 +43,8 @@ int main ()
                
              }
           }
-          for (int i=0;i <n; i++) cout << mas[i] << " ";
+          for (int i=0;i <n; i++) 
+             cout << mas[i] << " ";
           
           
 } else cout << "An error has occured while reading input data.";
